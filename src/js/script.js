@@ -4,6 +4,7 @@ import Swiper from 'swiper/bundle';
 import modal from "./modules/modal";
 import changeColor from "./modules/changeColor";
 import openContent from "./modules/openContent";
+import burger from "./modules/burger";
 
 // import 'swiper/css';
 window.addEventListener("DOMContentLoaded", () => {
@@ -32,4 +33,5 @@ window.addEventListener("DOMContentLoaded", () => {
         buttonSelector: ".about-studio__read-more",
         contentSelector: ".about-studio__text>p:last-child",
     });
+    burger(".burger__btn", ".burger__close", ".burger")
 });

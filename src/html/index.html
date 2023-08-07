@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -25,16 +27,25 @@
             <div class="header__column">
                 <div class="header__num-lang">
                     <a class="header__number" href="tel:3035550105">(303) 555-0105</a>
-                    <div class="header__change-language">
+                    <!-- <div class="header__change-language">
                         <select name="" id="">
                             <option value="">EN</option>
                             <option value="">RU</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
-                <img class="burger__btn" src="../img/main-icons/hamburger.svg"></img>
-                <div class="burger"></div>
+                <button class="burger__btn"><img src="../img/main-icons/hamburger.svg"></img></button>
+                <div class="burger">
+                    <ul class="burger__wrapper">
+                        <li class="burger__link"><a href="">Services</a></li>
+                        <li class="burger__link"><a href="">Portfolio</a></li>
+                        <li class="burger__link"><a href="">Pricing</a></li>
+                        <li class="burger__link"><a class="burger__number" href="tel:3035550105">(303) 555-0105</a></li>
+                        <button class="burger__close"><img src="../img/header/icons8-close.svg" alt=""></button>
+                    </ul>
+                </div>
             </div>
+
         </nav>
         <div class="header__hero hero container">
             <div class="hero__wrapper">
@@ -205,9 +216,9 @@
                     </div>
 
                 </div>
-                <div class="filter__view-more filter--mobile">
+                <!-- <div class="filter__view-more filter--mobile">
                     <button>VIEW MORE</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -642,7 +653,7 @@
         </div>
 
     </footer>
-    <script src="../../dist/my-first-webpack.bundle.js"></script>
+    <script src="../../dist/js/bundle.js"></script>
 </body>
 
 </html>

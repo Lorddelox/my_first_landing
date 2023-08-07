@@ -94,6 +94,10 @@ button {
   display: none;
 }
 
+.active {
+  display: block;
+}
+
 .title {
   font-weight: 400;
   font-size: 40px;
@@ -123,6 +127,7 @@ a {
   justify-content: space-between;
   min-height: 101px;
   align-items: center;
+  width: 100%;
 }
 .header__hero {
   display: flex;
@@ -139,8 +144,7 @@ a {
 .header__link-wrapper {
   display: flex;
   margin-left: 68px;
-  -moz-column-gap: 51px;
-       column-gap: 51px;
+  column-gap: 51px;
 }
 .header__num-lang {
   display: flex;
@@ -157,6 +161,7 @@ a {
 }
 .hero__wrapper {
   max-width: 570px;
+  margin-top: 30px;
 }
 .hero__title {
   font-size: 66px;
@@ -182,6 +187,39 @@ a {
   right: 0;
   z-index: 0;
   width: 50%;
+}
+
+.burger {
+  display: none;
+  position: fixed;
+  background: gray;
+  right: 0%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.burger__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: 100%;
+  color: #fff;
+  margin-top: 10px;
+}
+.burger__link {
+  font-size: 20px;
+  color: #fff;
+}
+.burger__link a {
+  color: #fff;
+}
+.burger__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
 }
 
 .modal__order-call, .modal__buy-now, .modal__consultation {
@@ -220,12 +258,6 @@ a {
   background: #FDFBF8;
   border: 2px solid #D3A265;
   border-radius: 8px;
-}
-.modal__form input::-moz-placeholder {
-  text-align: left;
-}
-.modal__form input:-ms-input-placeholder {
-  text-align: left;
 }
 .modal__form input::placeholder {
   text-align: left;
@@ -274,8 +306,7 @@ a {
 }
 .our-services__content {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   justify-content: center;
   align-items: center;
   margin-top: 84px;
@@ -338,8 +369,7 @@ a {
   display: flex;
   row-gap: 20px;
   flex-wrap: wrap;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .filter--mobile {
   display: none;
@@ -347,8 +377,7 @@ a {
 
 .filter-btn__column {
   display: flex;
-  -moz-column-gap: 59px;
-       column-gap: 59px;
+  column-gap: 59px;
 }
 
 .our-prising {
@@ -359,8 +388,7 @@ a {
 }
 .our-prising__content {
   display: flex;
-  -moz-column-gap: 82px;
-       column-gap: 82px;
+  column-gap: 82px;
   justify-content: center;
   margin-top: 70px;
 }
@@ -458,8 +486,7 @@ a {
 }
 .about-us__slide-info {
   display: flex;
-  -moz-column-gap: 27px;
-       column-gap: 27px;
+  column-gap: 27px;
 }
 .about-us__slide-column {
   display: flex;
@@ -473,8 +500,7 @@ a {
 }
 .about-us__slide-social-media {
   display: flex;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  column-gap: 8px;
 }
 .about-us__slide-text {
   margin-top: 30px;
@@ -482,8 +508,7 @@ a {
 .about-us__pagination {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .about-us__pagination-bulet--active {
   background: #D3A265;
@@ -568,36 +593,31 @@ a {
 @media (max-width: 1400px) {
   .hero__half-bg {
     height: 100%;
-    -o-object-fit: none;
-       object-fit: none;
+    object-fit: none;
   }
 }
 @media (max-width: 1200px) {
   .hero__wrapper {
     position: relative;
-    z-index: 1;
     max-width: 360px;
   }
   .hero__half-bg {
     height: 100%;
-    -o-object-fit: none;
-       object-fit: none;
+    object-fit: none;
   }
   .our-services__content {
     flex-wrap: wrap;
     row-gap: 15px;
   }
   .filter__content {
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
     justify-content: center;
   }
   .our-prising__content {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 50px;
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -655,8 +675,7 @@ a {
     justify-content: center;
   }
   .filter-btn__column {
-    -moz-column-gap: 18px;
-         column-gap: 18px;
+    column-gap: 18px;
     row-gap: 10px;
   }
   .filter-btn__column:last-child {
@@ -706,8 +725,7 @@ a {
     font-size: 15px;
   }
   .about-us__slide-info {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
   }
   .about-us__slide-line {
     top: 100px;
@@ -756,6 +774,9 @@ a {
   }
   .about-us__slide-line {
     top: 88px;
+  }
+  .modal__form {
+    height: 100%;
   }
 }
 @media (max-width: 1170px) {
