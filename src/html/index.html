@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__wrapper container">
+            <div class="header__column">
+                <div class="header__logo">
+                    <img src="../img/header/logo.svg" alt="">
+                </div>
+                <ul class="header__link-wrapper">
+                    <li><a href="" class="header__link">Services</a></li>
+                    <li><a href="" class="header__link">Portfolio</a></li>
+                    <li><a href="" class="header__link">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="header__column">
+                <div class="header__num-lang">
+                    <a class="header__number" href="tel:3035550105">(303) 555-0105</a>
+                    <div class="header__change-language">
+                        <select name="" id="">
+                            <option value="">EN</option>
+                            <option value="">RU</option>
+                        </select>
+                    </div>
+                </div>
+                <img class="burger__btn" src="../img/main-icons/hamburger.svg"></img>
+                <div class="burger"></div>
+            </div>
+        </nav>
+        <div class="header__hero hero container">
+            <div class="hero__wrapper">
+                <h1 class="hero__title">
+                    We create your space better
+                </h1>
+                <div class="hero__text">
+                    Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and
+                    work
+                    through great ideas since 1999.
+                </div>
+                <button class="hero__btn">
+                    Get started
+                </button>
+            </div>
+            <img class="hero__half-bg" src="../img/header/background.png" alt="">
+        </div>
+    </header>
+    <div class="modal__order-call hide">
+        <form class="modal__form" type="order-call">
+            <div class="modal__form-text">
+                Мы скоро вам <span>перезвоним!</span>
+            </div>
+            <input type="text" name="email or number" placeholder="Эл.почта или телефон">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="submit" class="modal__form-submit" value="ОТПРАВИТЬ ДАННЫЕ">
+            <div class="modal__close">
+                <img src="../img/modal/cross.svg" alt="">
+            </div>
+        </form>
+    </div>
+    <div class="modal__consultation hide">
+        <form class="modal__form" type="consultation">
+            <div class="modal__form-text">
+                Попробуйте бесплатную <br> <span>консультацию</span>
+            </div>
+            <input type="text" name="email or number" placeholder="Эл.почта или телефон">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="submit" class="modal__form-submit" value="ОТПРАВИТЬ ДАННЫЕ">
+            <div class="modal__close">
+                <img src="../img/modal/cross.svg" alt="">
+            </div>
+        </form>
+    </div>
+    <section class="about-studio">
+        <div class="about-studio__wrapper container">
+            <h2 class="about-studio__title title">
+                About <br> <span>Studio</span>
+            </h2>
+            <div class="about-studio__text">
+                <p>Interiart is an award-winning architecture and interior design practice based in NYC. We work
+                    internationally on projects of residential & commercial interior design that require a creative
+                    approach.
+                    Our talented and experienced designers leverage their knowledge and expertise to create unique and
+                    comfortable interiors for you.</p>
+                <p> Our team knows that interior design can be stressful for the client and we do our best to make it as
+                    easy as
+                    possible. We listen to your needs, ideas, and inputs. And most importantly, we make it exciting and
+                    enjoyable for our clients.</p>
+
+            </div>
+            <button class="about-studio__read-more">
+                READ MORE
+
+            </button>
+        </div>
+
+    </section>
+    <section class="our-services">
+        <div class="our-services__wrapper container">
+            <h2 class="our-services__title title">
+                Our <span>Services</span>
+            </h2>
+            <div class="our-services__content">
+                <div class="our-services__item">
+                    <div class="our-services__item-icon">
+                        <img src="../img/our-services/icon.svg" alt="">
+                    </div>
+                    <div class="our-services__item-title">
+                        INTERIOR DESIGN
+                    </div>
+                    <div class="our-services__item-text">
+
+                        Interior design services offer a vast variety of solutions for our clients’ homes and offices.
+                    </div>
+
+                </div>
+                <div class="our-services__item">
+                    <div class="our-services__item-icon">
+                        <img src="../img/our-services/icon-1.svg" alt="">
+                    </div>
+                    <div class="our-services__item-title">
+                        DECORATIVE SERVICES
+                    </div>
+                    <div class="our-services__item-text">
+                        Our professional decorators will be happy to help you change your house’s inner look.
+
+                    </div>
+
+                </div>
+                <div class="our-services__item">
+                    <div class="our-services__item-icon">
+                        <img src="../img/our-services/icon-2.svg" alt="">
+                    </div>
+                    <div class="our-services__item-title">
+                        SPACE PLANNING
+                    </div>
+                    <div class="our-services__item-text">
+                        We create better interior experiences through our space planning services.
+                    </div>
+
+                </div>
+                <div class="our-services__item">
+                    <div class="our-services__item-icon">
+                        <img src="../img/our-services/icon-3.svg" alt="">
+                    </div>
+                    <div class="our-services__item-title">
+                        PROJECT MANAGEMENT
+                    </div>
+                    <div class="our-services__item-text">
+                        We provide proper project management as it’s one of the main success factors in interior design.
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="our-services__btn-wrapper">
+                <button class="our-services__btn consultation-btn">
+                    Free consultation
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="our-portfolio">
+        <div class="our-portfolio__wrapper container">
+            <h2 class="our-portfolio__title title">Our <span>Portfolio</span>
+            </h2>
+            <div class="our-portfolio__filter filter">
+                <div class="filter__btn-wrapper">
+                    <div class="filter-btn__column">
+                        <button class="filter__btn filter__btn--active">ALL</button>
+                        <button class="filter__btn">COMERCIAL</button>
+                        <button class="filter__btn">RESIDENTIAL</button>
+                        <button class="filter__btn">OFFICE</button>
+                        <button class="filter__btn">OTHER</button>
+                    </div>
+                    <div class="filter-btn__column">VIEW MORE</div>
+                </div>
+                <div class="filter__content">
+
+                    <div class="filter__content-item" data-filter="COMERCIAL"><img src="../img/our-portfolio/1.jpg"
+                            alt=""></div>
+                    <div class="filter__content-item " data-filter="RESIDENTIAL"><img src="../img/our-portfolio/2.jpg"
+                            alt=""></div>
+                    <div class="filter__content-item" data-filter="OFFICE"><img src="../img/our-portfolio/3.jpg" alt="">
+                    </div>
+                    <div class="filter__content-item" data-filter="OFFICE"><img src="../img/our-portfolio/4.jpg" alt="">
+                    </div>
+
+
+                    <div class="filter__content-item" data-filter="RESIDENTIAL"><img src="../img/our-portfolio/5.jpg"
+                            alt=""></div>
+                    <div class="filter__content-item" data-filter="COMERCIAL"><img src="../img/our-portfolio/6.jpg"
+                            alt=""></div>
+                    <div class="filter__content-item" data-filter="OTHER"><img src="../img/our-portfolio/7.jpg" alt="">
+                    </div>
+                    <div class="filter__content-item" data-filter="OTHER"><img src="../img/our-portfolio/8.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="filter__view-more filter--mobile">
+                    <button>VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-prising">
+        <h2 class="our-prising__title title">
+            Our <span>Pricing</span>
+        </h2>
+        <div class="our-prising__content container">
+            <div class="our-prising__item">
+                <div class="our-prising__item-name">
+                    Basic
+                </div>
+                <div class="our-prising__item-price">
+                    <span>$25</span> <br>
+                    per month
+                </div>
+                <hr class="our-prising__item-line">
+                <ul class="our-prising__item-info">
+                    <li>Interior Design</li>
+                    <li>Project Discussion</li>
+                    <li>Space Planning</li>
+                    <li>Online Consultation</li>
+
+                </ul>
+                <a href="./basic.html" class="our-prising__item-btn">
+                    buy now
+                </a>
+            </div>
+            <div class="our-prising__item">
+                <div class="our-prising__item-name">
+                    Standart
+                </div>
+                <div class="our-prising__item-price">
+                    <span>$50 </span>
+                    <br>
+                    per month
+                </div>
+                <hr class="our-prising__item-line">
+                <ul class="our-prising__item-info">
+                    <li>Color Analysis</li>
+                    <li>Space Planning</li>
+                    <li>Home Remodeling</li>
+                    <li>3D Interior Model</li>
+
+                </ul>
+                <a href="./standart.html" class="our-prising__item-btn">
+                    buy now
+                </a>
+            </div>
+            <div class="our-prising__item">
+                <div class="our-prising__item-name">
+                    Premium
+                </div>
+                <div class="our-prising__item-price">
+                    <span>$80</span>
+                    <br>
+                    per month
+                </div>
+                <hr class="our-prising__item-line">
+                <ul class="our-prising__item-info">
+
+                    <li>Concept Development</li>
+                    <li>Decoration Services</li>
+                    <li>Interior Architecture</li>
+                    <li>Flooring Installation</li>
+
+                </ul>
+                <a href="./premium.html" class="our-prising__item-btn">
+                    buy now
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-us__title title">
+            What <span>People Say</span>
+        </div>
+
+        <div class="swiper about-us__slider container">
+            <div class="about-us__slider-wrapper swiper-wrapper">
+                <div class="swiper-slide about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/2.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/1.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/2.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/1.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/2.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/1.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/2.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/1.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+                <div class="about-us__slide swiper-slide">
+                    <div class="about-us__slide-line">
+
+                    </div>
+                    <div class="about-us__slide-info">
+                        <div class="about-us__slide-column">
+                            <img src="../img/about-us/2.png" alt="">
+                        </div>
+                        <div class="about-us__slide-column">
+                            <div class="about-us__slide-row">
+                                Annette Black <br>
+                                <span>Merchandising Associate</span>
+                            </div>
+                            <div class="about-us__slide-row">
+                                <div class="about-us__slide-social-media">
+                                    <img src="../img/about-us/icons/twitter.svg" alt="">
+                                    <img src="../img/about-us/icons/linkedin.svg" alt="">
+                                    <img src="../img/about-us/icons/fb.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__slide-text">
+                        Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna
+                        in.
+                        Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla
+                        odio vel.
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-pagination about-us__pagination"></div>
+        </div>
+    </section>
+    <section class="question">
+        <div class="question__wrappper container">
+            <div class="question__title title">
+                Do you have <br>
+                <span>any question?</span>
+            </div>
+            <button class="question__btn order-call__btn">order a call</button>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__column">
+                <div class="footer__logo">
+                    <img src="../img/header/logo.svg" alt="">
+                </div>
+
+                <div class="footer__social-media footer--mobile">
+                    <a href=""><img src="../img/about-us/icons/twitter.svg" alt=""></a>
+                    <a href=""><img src="../img/about-us/icons/linkedin.svg" alt=""></a>
+                    <a href=""><img src="../img/about-us/icons/fb.svg" alt=""></a>
+                </div>
+
+                <div class="footer__text">
+                    We are one of the leading interior design and remodeling studios available for all of your
+                    residential
+                    and commercial interior design needs.
+                </div>
+
+                <div class="footer__copyright footer--desktop">
+                    © 2023 id Studio. All Rights Reserved.
+                </div>
+
+            </div>
+            <div class="footer__column footer__navigation">
+
+                <nav class="footer__nav-wrapper">
+                    <div class="footer__column-title">
+                        Navigation
+                    </div>
+                    <ul class="footer__nav">
+                        <li><a href="" class="footer__link">About</a></li>
+                        <li><a href="" class="footer__link">Services</a></li>
+                        <li><a href="" class="footer__link">Portfolio</a></li>
+                        <li><a href="" class="footer__link">Pricing</a></li>
+                        <li><a href="" class="footer__link">Testemonials</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__social-media footer--desktop">
+                    <a href=""><img src="../img/about-us/icons/twitter.svg" alt=""></a>
+                    <a href=""><img src="../img/about-us/icons/linkedin.svg" alt=""></a>
+                    <a href=""><img src="../img/about-us/icons/fb.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__column footer__data">
+                <div class="footer__column-title">
+                    CONTACTS
+                </div>
+                <div class="footer__info">
+                    <address class="footer__address">
+                        <span>address</span> <br>
+                        <div>3517 W. Gray St. Utica, Pennsylvania 57867</div>
+                    </address>
+                    <div class="footer__email">
+                        <span>EMAIL</span> <br>
+                        <a href="mailto:abc@example.com">michelle.rivera@idstudio.com</a>
+                    </div>
+                    <div class="footer__number">
+                        <span>PHONES</span> <br>
+                        <a href="tel:8085550111">(808) 555-0111</a> or <a href="tel:3035550105">(303) 555-0105</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__copyright footer--mobile">
+                © 2023 id Studio. All Rights Reserved.
+            </div>
+        </div>
+
+    </footer>
+    <script src="../../dist/my-first-webpack.bundle.js"></script>
+</body>
+
+</html>
